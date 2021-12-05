@@ -1,0 +1,2822 @@
+<html><head><meta id="vp" name="viewport" content="initial-scale=1"><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-D7X7WZVLXR&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script data-ad-client="ca-pub-3897120385174936" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>DigimonCard.dev Library</title><meta name="description" content="Digimon Trading Card Game Deck Builder"><meta name="msapplication-config" content="/browserconfig.xml"><meta name="theme-color" content="#fff"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.8f542d49.png"><link rel="manifest" href="/manifest.webmanifest"><link rel="stylesheet" href="/src.72e2fdfe.css"><script src="https://www.googletagmanager.com/gtag/js?l=dataLayer" async=""></script><style data-jss="" data-meta="MuiSvgIcon">
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  -moz-user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #2196f3;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+</style><style data-jss="" data-meta="MuiPaper">
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+</style><style data-jss="" data-meta="MuiPopover">
+.MuiPopover-paper {
+  outline: 0;
+  position: absolute;
+  max-width: calc(100% - 32px);
+  min-width: 16px;
+  max-height: calc(100% - 32px);
+  min-height: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+</style><style data-jss="" data-meta="MuiCollapse">
+.MuiCollapse-container {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiCollapse-entered {
+  height: auto;
+  overflow: visible;
+}
+.MuiCollapse-hidden {
+  visibility: hidden;
+}
+.MuiCollapse-wrapper {
+  display: flex;
+}
+.MuiCollapse-wrapperInner {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss118 {
+  color: black;
+  border: 0.1vmin black solid;
+  border-radius: 2vmin;
+  background-color: #DFDBE5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%239C92AC' fill-opacity='0.25' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E"), linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss102 {
+  color: white;
+  margin: 0.5vmin;
+  display: flex;
+  font-size: 2vmin;
+  flex-direction: column;
+  -moz-user-select: none;
+}
+.jss103 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.jss104 {
+  right: 0.5vmin;
+  position: absolute;
+}
+.jss104 svg:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+.jss105 {
+  flex: 1;
+  border: 2px solid black;
+  height: 60vmin;
+  margin: 0.5vmin 1vmin 0  1vmin;
+  z-index: -2;
+  object-fit: cover;
+  border-radius: 2vmin;
+}
+.jss106 {
+  color: black;
+  width: 30vmin;
+  font-size: 3vmin;
+  font-weight: 900;
+  -moz-user-select: auto;
+}
+.jss107 {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0.5vmin;
+  padding-right: 0.5vmin;
+  flex-direction: column;
+  -moz-user-select: auto;
+}
+.jss108 {
+  display: flex;
+  background: #5559;
+  border-radius: 0.75vmin;
+  margin-bottom: 1px;
+  justify-content: space-between;
+  -moz-user-select: auto;
+}
+.jss109 {
+  display: flex;
+  background: #5559;
+  border-radius: 0.75vmin;
+  margin-bottom: 1px;
+  pointer-events: all;
+  justify-content: space-between;
+  -moz-user-select: auto;
+}
+.jss110 {
+  padding-left: 0.5vmin;
+}
+.jss111 {
+  max-width: 40vmin;
+  text-align: end;
+  padding-right: 0.5vmin;
+  -moz-user-select: all;
+}
+.jss112 {
+  max-width: 55vmin;
+  text-align: start;
+  padding-right: 0.5vmin;
+  -moz-user-select: all;
+}
+.jss113 {
+  cursor: help;
+  display: inline-block;
+  position: relative;
+}
+.jss114 {
+  top: 100%;
+  left: 50%;
+  color: #fff;
+  width: 120px;
+  padding: 5px 0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  margin-left: -60px;
+  border-radius: 6px;
+  background-color: black;
+}
+.jss114:hover {
+  visibility: visible;
+}
+.jss115 {
+  text-decoration: none;
+}
+.jss116img {
+  vertical-align: middle;
+}
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="MuiTooltip">
+.MuiTooltip-popper {
+  z-index: 3000;
+  pointer-events: none;
+}
+.MuiTooltip-popperInteractive {
+  pointer-events: auto;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow {
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 1em;
+  margin-top: -0.95em;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow {
+  left: 0;
+  width: 2em;
+  bottom: 0;
+  height: 1em;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: -0.95em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow {
+  left: 0;
+  width: 1em;
+  height: 2em;
+  margin-top: 4px;
+  margin-left: -0.95em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow {
+  right: 0;
+  width: 1em;
+  height: 2em;
+  margin-top: 4px;
+  margin-right: -0.95em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow::before {
+  border-color: transparent transparent transparent currentcolor;
+  border-width: 1em 0 1em 1em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow::before {
+  border-color: transparent currentcolor transparent transparent;
+  border-width: 1em 1em 1em 0;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow::before {
+  border-color: currentcolor transparent transparent transparent;
+  border-width: 1em 1em 0 1em;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow::before {
+  border-color: transparent transparent currentcolor transparent;
+  border-width: 0 1em 1em 1em;
+}
+.MuiTooltip-tooltip {
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.625rem;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.4em;
+  border-radius: 4px;
+  background-color: rgba(97, 97, 97, 0.9);
+}
+.MuiTooltip-tooltipArrow {
+  margin: 0;
+  position: relative;
+}
+.MuiTooltip-arrow {
+  color: rgba(97, 97, 97, 0.9);
+  position: absolute;
+  font-size: 6px;
+}
+.MuiTooltip-arrow::before {
+  width: 0;
+  height: 0;
+  margin: auto;
+  content: "";
+  display: block;
+  border-style: solid;
+}
+.MuiTooltip-touch {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.14286em;
+}
+.MuiTooltip-tooltipPlacementLeft {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementLeft {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementRight {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementRight {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementTop {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementTop {
+    margin: 14px 0;
+  }
+}
+.MuiTooltip-tooltipPlacementBottom {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementBottom {
+    margin: 14px 0;
+  }
+}
+</style><style data-jss="" data-meta="MuiDrawer">
+.MuiDrawer-docked {
+  flex: 0 0 auto;
+}
+.MuiDrawer-paper {
+  top: 0;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  outline: 0;
+  z-index: 1200;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+}
+.MuiDrawer-paperAnchorLeft {
+  left: 0;
+  right: auto;
+}
+.MuiDrawer-paperAnchorRight {
+  left: auto;
+  right: 0;
+}
+.MuiDrawer-paperAnchorTop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  height: auto;
+  max-height: 100%;
+}
+.MuiDrawer-paperAnchorBottom {
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  max-height: 100%;
+}
+.MuiDrawer-paperAnchorDockedLeft {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedTop {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedRight {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiDrawer-paperAnchorDockedBottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss3492 {
+  display: flex;
+  -moz-user-select: none;
+}
+.jss3493 {
+  flex: 1 0 auto;
+}
+.jss3494 {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+.jss3495 {
+  width: 38px;
+  height: 38px;
+}
+.jss3496 {
+  overflow: hidden;
+}
+.jss3497 {
+  flex: 1;
+  z-index: -2;
+  background: black;
+  transition: 0.25s;
+}
+.jss3498 {
+  background: transparent;
+}
+.jss3498::before {
+  left: 0;
+  content: attr(title);
+  z-index: -1;
+  position: absolute;
+  -webkit-text-stroke: 0.3em black;
+}
+.jss3499 {
+  color: #bfbfbf;
+  right: 0;
+  position: absolute;
+  transform: rotate(-90deg);
+  font-weight: bold;
+  padding-right: 15%;
+  padding-bottom: 7.5%;
+  transform-origin: right;
+}
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-moz-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-moz-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  -moz-user-select: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+</style><style data-jss="" data-meta="MuiIconButton">
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-edgeStart {
+  margin-left: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+  margin-left: -3px;
+}
+.MuiIconButton-edgeEnd {
+  margin-right: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+  margin-right: -3px;
+}
+.MuiIconButton-colorInherit {
+  color: inherit;
+}
+.MuiIconButton-colorPrimary {
+  color: #2196f3;
+}
+.MuiIconButton-colorPrimary:hover {
+  background-color: rgba(33, 150, 243, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-colorSecondary {
+  color: #f50057;
+}
+.MuiIconButton-colorSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-sizeSmall {
+  padding: 3px;
+  font-size: 1.125rem;
+}
+.MuiIconButton-label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+</style><style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #2196f3;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(33, 150, 243, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #f50057;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButton-outlinedPrimary {
+  color: #2196f3;
+  border: 1px solid rgba(33, 150, 243, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #2196f3;
+  background-color: rgba(33, 150, 243, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #f50057;
+  border: 1px solid rgba(245, 0, 87, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #f50057;
+  background-color: rgba(245, 0, 87, 0.04);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-contained:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  background-color: #d5d5d5;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #2196f3;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #1976d2;
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #2196f3;
+  }
+}
+.MuiButton-containedSecondary {
+  color: #fff;
+  background-color: #f50057;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: #c51162;
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+.MuiButton-disableElevation {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:hover {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-focusVisible {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:active {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-disabled {
+  box-shadow: none;
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-textSizeSmall {
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+}
+.MuiButton-textSizeLarge {
+  padding: 8px 11px;
+  font-size: 0.9375rem;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedSizeLarge {
+  padding: 7px 21px;
+  font-size: 0.9375rem;
+}
+.MuiButton-containedSizeSmall {
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+}
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+.MuiButton-startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
+}
+.MuiButton-startIcon.MuiButton-iconSizeSmall {
+  margin-left: -2px;
+}
+.MuiButton-endIcon {
+  display: inherit;
+  margin-left: 8px;
+  margin-right: -4px;
+}
+.MuiButton-endIcon.MuiButton-iconSizeSmall {
+  margin-right: -2px;
+}
+.MuiButton-iconSizeSmall > *:first-child {
+  font-size: 18px;
+}
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 20px;
+}
+.MuiButton-iconSizeLarge > *:first-child {
+  font-size: 22px;
+}
+</style><style data-jss="" data-meta="MuiInputBase">
+@-moz-keyframes mui-auto-fill {}
+@-moz-keyframes mui-auto-fill-cancel {}
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+}
+.MuiInputBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInputBase-multiline.MuiInputBase-marginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-fullWidth {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiInputBase-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:focus {
+  outline: 0;
+}
+.MuiInputBase-input:invalid {
+  box-shadow: none;
+}
+.MuiInputBase-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+}
+.MuiInputBase-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 5000s;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInputBase-inputMarginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-inputMultiline {
+  height: auto;
+  resize: none;
+  padding: 0;
+}
+.MuiInputBase-inputTypeSearch {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+</style><style data-jss="" data-meta="MuiFilledInput">
+.MuiFilledInput-root {
+  position: relative;
+  transition: background-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.MuiFilledInput-root:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+.MuiFilledInput-root.Mui-focused {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.MuiFilledInput-root.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiFilledInput-root:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+}
+.MuiFilledInput-colorSecondary.MuiFilledInput-underline:after {
+  border-bottom-color: #f50057;
+}
+.MuiFilledInput-underline:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #2196f3;
+  pointer-events: none;
+}
+.MuiFilledInput-underline.Mui-focused:after {
+  transform: scaleX(1);
+}
+.MuiFilledInput-underline.Mui-error:after {
+  transform: scaleX(1);
+  border-bottom-color: #f44336;
+}
+.MuiFilledInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "\00a0";
+  position: absolute;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}
+.MuiFilledInput-underline:hover:before {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.87);
+}
+.MuiFilledInput-underline.Mui-disabled:before {
+  border-bottom-style: dotted;
+}
+.MuiFilledInput-adornedStart {
+  padding-left: 12px;
+}
+.MuiFilledInput-adornedEnd {
+  padding-right: 12px;
+}
+.MuiFilledInput-multiline {
+  padding: 27px 12px 10px;
+}
+.MuiFilledInput-multiline.MuiFilledInput-marginDense {
+  padding-top: 23px;
+  padding-bottom: 6px;
+}
+.MuiFilledInput-input {
+  padding: 27px 12px 10px;
+}
+.MuiFilledInput-input:-webkit-autofill {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.MuiFilledInput-inputMarginDense {
+  padding-top: 23px;
+  padding-bottom: 6px;
+}
+.MuiFilledInput-inputHiddenLabel {
+  padding-top: 18px;
+  padding-bottom: 19px;
+}
+.MuiFilledInput-inputHiddenLabel.MuiFilledInput-inputMarginDense {
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+.MuiFilledInput-inputMultiline {
+  padding: 0;
+}
+.MuiFilledInput-inputAdornedStart {
+  padding-left: 0;
+}
+.MuiFilledInput-inputAdornedEnd {
+  padding-right: 0;
+}
+</style><style data-jss="" data-meta="MuiFormLabel">
+.MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: #2196f3;
+}
+.MuiFormLabel-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiFormLabel-root.Mui-error {
+  color: #f44336;
+}
+.MuiFormLabel-colorSecondary.Mui-focused {
+  color: #f50057;
+}
+.MuiFormLabel-asterisk.Mui-error {
+  color: #f44336;
+}
+</style><style data-jss="" data-meta="MuiInputLabel">
+.MuiInputLabel-root {
+  display: block;
+  transform-origin: top left;
+}
+.MuiInputLabel-formControl {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(0, 24px) scale(1);
+}
+.MuiInputLabel-marginDense {
+  transform: translate(0, 21px) scale(1);
+}
+.MuiInputLabel-shrink {
+  transform: translate(0, 1.5px) scale(0.75);
+  transform-origin: top left;
+}
+.MuiInputLabel-animated {
+  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+.MuiInputLabel-filled {
+  z-index: 1;
+  transform: translate(12px, 20px) scale(1);
+  pointer-events: none;
+}
+.MuiInputLabel-filled.MuiInputLabel-marginDense {
+  transform: translate(12px, 17px) scale(1);
+}
+.MuiInputLabel-filled.MuiInputLabel-shrink {
+  transform: translate(12px, 10px) scale(0.75);
+}
+.MuiInputLabel-filled.MuiInputLabel-shrink.MuiInputLabel-marginDense {
+  transform: translate(12px, 7px) scale(0.75);
+}
+.MuiInputLabel-outlined {
+  z-index: 1;
+  transform: translate(14px, 20px) scale(1);
+  pointer-events: none;
+}
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  transform: translate(14px, 12px) scale(1);
+}
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75);
+}
+</style><style data-jss="" data-meta="MuiFormControl">
+.MuiFormControl-root {
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+}
+.MuiFormControl-marginNormal {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="MuiList">
+.MuiList-root {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+.MuiList-padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.MuiList-subheader {
+  padding-top: 0;
+}
+</style><style data-jss="" data-meta="MuiMenu">
+.MuiMenu-paper {
+  max-height: calc(100% - 96px);
+  -webkit-overflow-scrolling: touch;
+}
+.MuiMenu-list {
+  outline: 0;
+}
+</style><style data-jss="" data-meta="MuiTextField">
+
+</style><style data-jss="" data-meta="MuiDialog">
+@media print {
+  .MuiDialog-root {
+    position: absolute !important;
+  }
+}
+.MuiDialog-scrollPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MuiDialog-scrollBody {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+.MuiDialog-scrollBody:after {
+  width: 0;
+  height: 100%;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+.MuiDialog-container {
+  height: 100%;
+  outline: 0;
+}
+@media print {
+  .MuiDialog-container {
+    height: auto;
+  }
+}
+.MuiDialog-paper {
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+}
+@media print {
+  .MuiDialog-paper {
+    box-shadow: none;
+    overflow-y: visible;
+  }
+}
+.MuiDialog-paperScrollPaper {
+  display: flex;
+  max-height: calc(100% - 64px);
+  flex-direction: column;
+}
+.MuiDialog-paperScrollBody {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.MuiDialog-paperWidthFalse {
+  max-width: calc(100% - 64px);
+}
+.MuiDialog-paperWidthXs {
+  max-width: 444px;
+}
+@media (max-width:507.95px) {
+  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthSm {
+  max-width: 600px;
+}
+@media (max-width:663.95px) {
+  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthMd {
+  max-width: 960px;
+}
+@media (max-width:1023.95px) {
+  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthLg {
+  max-width: 1280px;
+}
+@media (max-width:1343.95px) {
+  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperWidthXl {
+  max-width: 1920px;
+}
+@media (max-width:1983.95px) {
+  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
+    max-width: calc(100% - 64px);
+  }
+}
+.MuiDialog-paperFullWidth {
+  width: calc(100% - 64px);
+}
+.MuiDialog-paperFullScreen {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: 100%;
+  max-height: none;
+  border-radius: 0;
+}
+.MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
+  margin: 0;
+  max-width: 100%;
+}
+</style><style data-jss="" data-meta="MuiTypography">
+.MuiTypography-root {
+  margin: 0;
+}
+.MuiTypography-body2 {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.MuiTypography-caption {
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiTypography-h1 {
+  font-size: 6rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+}
+.MuiTypography-h2 {
+  font-size: 3.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+}
+.MuiTypography-h3 {
+  font-size: 3rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0em;
+}
+.MuiTypography-h4 {
+  font-size: 2.125rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+}
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.MuiTypography-subtitle1 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.00938em;
+}
+.MuiTypography-subtitle2 {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+}
+.MuiTypography-overline {
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 2.66;
+  letter-spacing: 0.08333em;
+  text-transform: uppercase;
+}
+.MuiTypography-srOnly {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #2196f3;
+}
+.MuiTypography-colorSecondary {
+  color: #f50057;
+}
+.MuiTypography-colorTextPrimary {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorError {
+  color: #f44336;
+}
+.MuiTypography-displayInline {
+  display: inline;
+}
+.MuiTypography-displayBlock {
+  display: block;
+}
+</style><style data-jss="" data-meta="PrivateValueLabel">
+.jss3288.jss3289 .jss3290 {
+  transform: scale(1) translateY(-10px);
+}
+.jss3290 {
+  top: -34px;
+  z-index: 1;
+  position: absolute;
+  font-size: 0.75rem;
+  transform: scale(0);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01071em;
+  transform-origin: bottom center;
+}
+.jss3291 {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  transform: rotate(-45deg);
+  align-items: center;
+  border-radius: 50% 50% 50% 0;
+  justify-content: center;
+  background-color: currentColor;
+}
+.jss3292 {
+  color: #fff;
+  transform: rotate(45deg);
+}
+</style><style data-jss="" data-meta="MuiSlider">
+.MuiSlider-root {
+  color: #2196f3;
+  width: 100%;
+  cursor: pointer;
+  height: 2px;
+  display: inline-block;
+  padding: 13px 0;
+  position: relative;
+  box-sizing: content-box;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiSlider-root.Mui-disabled {
+  color: #bdbdbd;
+  cursor: default;
+  pointer-events: none;
+}
+.MuiSlider-root.MuiSlider-vertical {
+  width: 2px;
+  height: 100%;
+  padding: 0 13px;
+}
+@media (pointer: coarse) {
+  .MuiSlider-root {
+    padding: 20px 0;
+  }
+  .MuiSlider-root.MuiSlider-vertical {
+    padding: 0 20px;
+  }
+}
+@media print {
+  .MuiSlider-root {
+    color-adjust: exact;
+  }
+}
+.MuiSlider-colorSecondary {
+  color: #f50057;
+}
+.MuiSlider-marked {
+  margin-bottom: 20px;
+}
+.MuiSlider-marked.MuiSlider-vertical {
+  margin-right: 20px;
+  margin-bottom: auto;
+}
+.MuiSlider-rail {
+  width: 100%;
+  height: 2px;
+  display: block;
+  opacity: 0.38;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+}
+.MuiSlider-vertical .MuiSlider-rail {
+  width: 2px;
+  height: 100%;
+}
+.MuiSlider-track {
+  height: 2px;
+  display: block;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+}
+.MuiSlider-vertical .MuiSlider-track {
+  width: 2px;
+}
+.MuiSlider-trackFalse .MuiSlider-track {
+  display: none;
+}
+.MuiSlider-trackInverted .MuiSlider-track {
+  background-color: rgb(170, 215, 250);
+}
+.MuiSlider-trackInverted .MuiSlider-rail {
+  opacity: 1;
+}
+.MuiSlider-thumb {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  outline: 0;
+  position: absolute;
+  box-sizing: border-box;
+  margin-top: -5px;
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  align-items: center;
+  margin-left: -6px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: currentColor;
+}
+.MuiSlider-thumb::after {
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.MuiSlider-thumb.Mui-focusVisible, .MuiSlider-thumb:hover {
+  box-shadow: 0px 0px 0px 8px rgba(33, 150, 243, 0.16);
+}
+.MuiSlider-thumb.MuiSlider-active {
+  box-shadow: 0px 0px 0px 14px rgba(33, 150, 243, 0.16);
+}
+.MuiSlider-thumb.Mui-disabled {
+  width: 8px;
+  height: 8px;
+  margin-top: -3px;
+  margin-left: -4px;
+}
+.MuiSlider-vertical .MuiSlider-thumb {
+  margin-left: -5px;
+  margin-bottom: -6px;
+}
+.MuiSlider-vertical .MuiSlider-thumb.Mui-disabled {
+  margin-left: -3px;
+  margin-bottom: -4px;
+}
+.MuiSlider-thumb.Mui-disabled:hover {
+  box-shadow: none;
+}
+@media (hover: none) {
+  .MuiSlider-thumb.Mui-focusVisible, .MuiSlider-thumb:hover {
+    box-shadow: none;
+  }
+}
+.MuiSlider-thumbColorSecondary.Mui-focusVisible, .MuiSlider-thumbColorSecondary:hover {
+  box-shadow: 0px 0px 0px 8px rgba(245, 0, 87, 0.16);
+}
+.MuiSlider-thumbColorSecondary.MuiSlider-active {
+  box-shadow: 0px 0px 0px 14px rgba(245, 0, 87, 0.16);
+}
+.MuiSlider-mark {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  border-radius: 1px;
+  background-color: currentColor;
+}
+.MuiSlider-markActive {
+  opacity: 0.8;
+  background-color: #fff;
+}
+.MuiSlider-markLabel {
+  top: 26px;
+  color: rgba(0, 0, 0, 0.54);
+  position: absolute;
+  font-size: 0.875rem;
+  transform: translateX(-50%);
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  white-space: nowrap;
+  letter-spacing: 0.01071em;
+}
+.MuiSlider-vertical .MuiSlider-markLabel {
+  top: auto;
+  left: 26px;
+  transform: translateY(50%);
+}
+@media (pointer: coarse) {
+  .MuiSlider-markLabel {
+    top: 40px;
+  }
+  .MuiSlider-vertical .MuiSlider-markLabel {
+    left: 31px;
+  }
+}
+.MuiSlider-markLabelActive {
+  color: rgba(0, 0, 0, 0.87);
+}
+</style><style data-jss="" data-meta="MuiToggleButton">
+.MuiToggleButton-root {
+  color: rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  height: 48px;
+  padding: 0px 12px;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiToggleButton-root.Mui-selected {
+  color: rgba(0, 0, 0, 0.54);
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiToggleButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.12);
+}
+.MuiToggleButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+@media (hover: none) {
+  .MuiToggleButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiToggleButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiToggleButton-root.Mui-selected:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.MuiToggleButton-root.Mui-selected + .MuiToggleButton-root.Mui-selected {
+  border-left: 0;
+  margin-left: 0;
+}
+.MuiToggleButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiToggleButton-sizeSmall {
+  height: 40px;
+  padding: 0px 8px;
+  font-size: 0.8125rem;
+}
+.MuiToggleButton-sizeLarge {
+  height: 56px;
+  padding: 0px 16px;
+  font-size: 0.9375rem;
+}
+</style><style data-jss="" data-meta="MuiToggleButtonGroup">
+.MuiToggleButtonGroup-root {
+  display: inline-flex;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.MuiToggleButtonGroup-grouped {
+  padding: 0px 11px 0px 12px;
+}
+.MuiToggleButtonGroup-grouped:not(:first-child) {
+  border-left: 1px solid transparent;
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.MuiToggleButtonGroup-grouped:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.MuiToggleButtonGroup-groupedSizeSmall {
+  padding: 0px 7px 0px 8px;
+}
+.MuiToggleButtonGroup-groupedSizeLarge {
+  padding: 0px 15px 0px 16px;
+}
+</style><style data-jss="" data-meta="MuiListItem">
+.MuiListItem-root {
+  width: 100%;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.MuiListItem-root.Mui-focusVisible {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiListItem-root.Mui-disabled {
+  opacity: 0.5;
+}
+.MuiListItem-container {
+  position: relative;
+}
+.MuiListItem-dense {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.MuiListItem-alignItemsFlexStart {
+  align-items: flex-start;
+}
+.MuiListItem-divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-clip: padding-box;
+}
+.MuiListItem-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.MuiListItem-button {
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiListItem-button:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+.MuiListItem-secondaryAction {
+  padding-right: 48px;
+}
+</style><style data-jss="" data-meta="MuiMenuItem">
+.MuiMenuItem-root {
+  width: auto;
+  overflow: hidden;
+  font-size: 1rem;
+  box-sizing: border-box;
+  min-height: 48px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 6px;
+  white-space: nowrap;
+  letter-spacing: 0.00938em;
+  padding-bottom: 6px;
+}
+@media (min-width:600px) {
+  .MuiMenuItem-root {
+    min-height: auto;
+  }
+}
+.MuiMenuItem-dense {
+  font-size: 0.875rem;
+  min-height: auto;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss3226 {
+  width: 100vw;
+  display: flex;
+  padding: 1vmin;
+  overflow: hidden;
+  background: linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+      linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
+      linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+      linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+      linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+      linear-gradient(-90deg, #aaa 1px, transparent 1px),
+      linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+      linear-gradient(#aaa 1px, transparent 1px),
+      #f2f2f2;
+  transition: 0.5s;
+  align-content: flex-start;
+  flex-direction: column;
+  pointer-events: all;
+  background-size: 4px 4px,
+      4px 4px,
+      80px 80px,
+      80px 80px,
+      80px 80px,
+      80px 80px,
+      80px 80px,
+      80px 80px;
+  -moz-user-select: none;
+}
+.jss3227 {
+  pointer-events: none;
+}
+.jss3228 {
+  width: 100%;
+  border: solid 1px black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+.jss3228 .MuiDivider-root {
+  background: #0007;
+}
+.jss3230 {
+  padding: 0 1vmin 0 1vmin;
+}
+.jss3230 sub {
+  font-size: unset;
+}
+.jss3231 {
+  background: #f006;
+}
+.jss3232 {
+  display: flex;
+  transition: 0.5s;
+  justify-content: center;
+}
+.jss3232 > div {
+  transition: 0.5s;
+}
+.jss3233 {
+  overflow-y: auto;
+}
+.jss3234 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jss3235 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  opacity: 0.1;
+  position: absolute;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+}
+.jss3235 img {
+  width: 50vw;
+}
+.jss3236 {
+  flex: 1 1 auto;
+}
+.jss3237 {
+  width: 100%;
+  border: 1px dashed grey;
+  margin: 2px;
+  padding: 0.5em;
+}
+.jss3238 {
+  margin: 3px;
+}
+.jss3239 {
+  cursor: help;
+  display: inline-block;
+  position: relative;
+}
+.jss3240 {
+  top: 100%;
+  left: 50%;
+  color: #fff;
+  width: 120px;
+  padding: 5px 0;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  margin-left: -60px;
+  border-radius: 6px;
+  background-color: black;
+}
+.jss3240:hover {
+  visibility: visible;
+}
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="MuiChip">
+.MuiChip-root {
+  color: rgba(0, 0, 0, 0.87);
+  border: none;
+  cursor: default;
+  height: 32px;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  font-size: 0.8125rem;
+  box-sizing: border-box;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  white-space: nowrap;
+  border-radius: 16px;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #e0e0e0;
+}
+.MuiChip-root.Mui-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.MuiChip-root .MuiChip-avatar {
+  color: #616161;
+  width: 24px;
+  height: 24px;
+  font-size: 0.75rem;
+  margin-left: 5px;
+  margin-right: -6px;
+}
+.MuiChip-root .MuiChip-avatarColorPrimary {
+  color: #fff;
+  background-color: #1976d2;
+}
+.MuiChip-root .MuiChip-avatarColorSecondary {
+  color: #fff;
+  background-color: #c51162;
+}
+.MuiChip-root .MuiChip-avatarSmall {
+  width: 18px;
+  height: 18px;
+  font-size: 0.625rem;
+  margin-left: 4px;
+  margin-right: -4px;
+}
+.MuiChip-sizeSmall {
+  height: 24px;
+}
+.MuiChip-colorPrimary {
+  color: #fff;
+  background-color: #2196f3;
+}
+.MuiChip-colorSecondary {
+  color: #fff;
+  background-color: #f50057;
+}
+.MuiChip-clickable {
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiChip-clickable:hover, .MuiChip-clickable:focus {
+  background-color: rgb(206, 206, 206);
+}
+.MuiChip-clickable:active {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiChip-clickableColorPrimary:hover, .MuiChip-clickableColorPrimary:focus {
+  background-color: rgb(50, 158, 243);
+}
+.MuiChip-clickableColorSecondary:hover, .MuiChip-clickableColorSecondary:focus {
+  background-color: rgb(245, 20, 100);
+}
+.MuiChip-deletable:focus {
+  background-color: rgb(206, 206, 206);
+}
+.MuiChip-deletableColorPrimary:focus {
+  background-color: rgb(77, 171, 245);
+}
+.MuiChip-deletableColorSecondary:focus {
+  background-color: rgb(247, 51, 120);
+}
+.MuiChip-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  background-color: transparent;
+}
+.MuiChip-clickable.MuiChip-outlined:hover, .MuiChip-clickable.MuiChip-outlined:focus, .MuiChip-deletable.MuiChip-outlined:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiChip-outlined .MuiChip-avatar {
+  margin-left: 4px;
+}
+.MuiChip-outlined .MuiChip-avatarSmall {
+  margin-left: 2px;
+}
+.MuiChip-outlined .MuiChip-icon {
+  margin-left: 4px;
+}
+.MuiChip-outlined .MuiChip-iconSmall {
+  margin-left: 2px;
+}
+.MuiChip-outlined .MuiChip-deleteIcon {
+  margin-right: 5px;
+}
+.MuiChip-outlined .MuiChip-deleteIconSmall {
+  margin-right: 3px;
+}
+.MuiChip-outlinedPrimary {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+.MuiChip-clickable.MuiChip-outlinedPrimary:hover, .MuiChip-clickable.MuiChip-outlinedPrimary:focus, .MuiChip-deletable.MuiChip-outlinedPrimary:focus {
+  background-color: rgba(33, 150, 243, 0.04);
+}
+.MuiChip-outlinedSecondary {
+  color: #f50057;
+  border: 1px solid #f50057;
+}
+.MuiChip-clickable.MuiChip-outlinedSecondary:hover, .MuiChip-clickable.MuiChip-outlinedSecondary:focus, .MuiChip-deletable.MuiChip-outlinedSecondary:focus {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+.MuiChip-icon {
+  color: #616161;
+  margin-left: 5px;
+  margin-right: -6px;
+}
+.MuiChip-iconSmall {
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  margin-right: -4px;
+}
+.MuiChip-iconColorPrimary {
+  color: inherit;
+}
+.MuiChip-iconColorSecondary {
+  color: inherit;
+}
+.MuiChip-label {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-overflow: ellipsis;
+}
+.MuiChip-labelSmall {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.MuiChip-deleteIcon {
+  color: rgba(0, 0, 0, 0.26);
+  width: 22px;
+  cursor: pointer;
+  height: 22px;
+  margin: 0 5px 0 -6px;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiChip-deleteIcon:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+.MuiChip-deleteIconSmall {
+  width: 16px;
+  height: 16px;
+  margin-left: -4px;
+  margin-right: 4px;
+}
+.MuiChip-deleteIconColorPrimary {
+  color: rgba(255, 255, 255, 0.7);
+}
+.MuiChip-deleteIconColorPrimary:hover, .MuiChip-deleteIconColorPrimary:active {
+  color: #fff;
+}
+.MuiChip-deleteIconColorSecondary {
+  color: rgba(255, 255, 255, 0.7);
+}
+.MuiChip-deleteIconColorSecondary:hover, .MuiChip-deleteIconColorSecondary:active {
+  color: #fff;
+}
+.MuiChip-deleteIconOutlinedColorPrimary {
+  color: rgba(33, 150, 243, 0.7);
+}
+.MuiChip-deleteIconOutlinedColorPrimary:hover, .MuiChip-deleteIconOutlinedColorPrimary:active {
+  color: #2196f3;
+}
+.MuiChip-deleteIconOutlinedColorSecondary {
+  color: rgba(245, 0, 87, 0.7);
+}
+.MuiChip-deleteIconOutlinedColorSecondary:hover, .MuiChip-deleteIconOutlinedColorSecondary:active {
+  color: #f50057;
+}
+</style><style data-jss="" data-meta="MuiAutocomplete">
+.MuiAutocomplete-root:hover .MuiAutocomplete-clearIndicatorDirty, .MuiAutocomplete-root.Mui-focused .MuiAutocomplete-clearIndicatorDirty {
+  visibility: visible;
+}
+.MuiAutocomplete-fullWidth {
+  width: 100%;
+}
+.MuiAutocomplete-tag {
+  margin: 3px;
+  max-width: calc(100% - 6px);
+}
+.MuiAutocomplete-tagSizeSmall {
+  margin: 2px;
+  max-width: calc(100% - 4px);
+}
+.MuiAutocomplete-inputRoot {
+  flex-wrap: wrap;
+}
+.MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot, .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot {
+  padding-right: 30px;
+}
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot {
+  padding-right: 56px;
+}
+.MuiAutocomplete-inputRoot .MuiAutocomplete-input {
+  width: 0;
+  min-width: 30px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiInput-root"] {
+  padding-bottom: 1px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+  padding: 9px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"][class*="MuiOutlinedInput-marginDense"] {
+  padding: 6px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] {
+  padding-top: 19px;
+  padding-left: 8px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"][class*="MuiFilledInput-marginDense"] {
+  padding-bottom: 1px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"][class*="MuiFilledInput-marginDense"] .MuiAutocomplete-input {
+  padding: 4.5px 4px;
+}
+.MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"], .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] {
+  padding-right: 39px;
+}
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] {
+  padding-right: 65px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] .MuiAutocomplete-input {
+  padding: 9px 4px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] .MuiAutocomplete-endAdornment {
+  right: 9px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"][class*="MuiOutlinedInput-marginDense"] .MuiAutocomplete-input {
+  padding: 4.5px 4px;
+}
+.MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"], .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+  padding-right: 39px;
+}
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+  padding-right: 65px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] .MuiAutocomplete-input {
+  padding: 9.5px 4px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] .MuiAutocomplete-input:first-child {
+  padding-left: 6px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] .MuiAutocomplete-endAdornment {
+  right: 9px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiInput-root"][class*="MuiInput-marginDense"] .MuiAutocomplete-input {
+  padding: 4px 4px 5px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiInput-root"][class*="MuiInput-marginDense"] .MuiAutocomplete-input:first-child {
+  padding: 3px 0 6px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiInput-root"] .MuiAutocomplete-input {
+  padding: 4px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiInput-root"] .MuiAutocomplete-input:first-child {
+  padding: 6px 0;
+}
+.MuiAutocomplete-input {
+  opacity: 0;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+}
+.MuiAutocomplete-inputFocused {
+  opacity: 1;
+}
+.MuiAutocomplete-endAdornment {
+  top: calc(50% - 14px);
+  right: 0;
+  position: absolute;
+}
+.MuiAutocomplete-clearIndicator {
+  padding: 4px;
+  visibility: hidden;
+  margin-right: -2px;
+}
+.MuiAutocomplete-popupIndicator {
+  padding: 2px;
+  margin-right: -2px;
+}
+.MuiAutocomplete-popupIndicatorOpen {
+  transform: rotate(180deg);
+}
+.MuiAutocomplete-popper {
+  z-index: 1300;
+}
+.MuiAutocomplete-popperDisablePortal {
+  position: absolute;
+}
+.MuiAutocomplete-paper {
+  margin: 4px 0;
+  overflow: hidden;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.MuiAutocomplete-listbox {
+  margin: 0;
+  padding: 8px 0px;
+  overflow: auto;
+  list-style: none;
+  max-height: 40vh;
+}
+.MuiAutocomplete-loading {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 14px 16px;
+}
+.MuiAutocomplete-noOptions {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 14px 16px;
+}
+.MuiAutocomplete-option {
+  cursor: pointer;
+  display: flex;
+  outline: 0;
+  box-sizing: border-box;
+  min-height: 48px;
+  align-items: center;
+  padding-top: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 6px;
+  justify-content: flex-start;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (min-width:600px) {
+  .MuiAutocomplete-option {
+    min-height: auto;
+  }
+}
+.MuiAutocomplete-option[aria-selected="true"] {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiAutocomplete-option[data-focus="true"] {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiAutocomplete-option:active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiAutocomplete-option[aria-disabled="true"] {
+  opacity: 0.38;
+  pointer-events: none;
+}
+.MuiAutocomplete-groupLabel {
+  top: -8px;
+  background-color: #fff;
+}
+.MuiAutocomplete-groupUl {
+  padding: 0;
+}
+.MuiAutocomplete-groupUl .MuiAutocomplete-option {
+  padding-left: 24px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss3293 {
+  width: 100vw;
+  height: 100%;
+  padding: 1vmin;
+}
+.jss3294 {
+  margin: 0.25vmin;
+}
+.jss3295 {
+  margin: 8px;
+  max-width: 300px;
+  min-width: 120px;
+}
+</style><style data-jss="" data-meta="MuiBox">
+
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="makeStyles">
+.jss3211 {
+  width: 100vw;
+  height: 100%;
+  padding: 1vmin;
+}
+.jss3212 {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-user-select: none;
+}
+.jss3213 {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.jss3213:hover {
+  transform: scale(1);
+}
+.jss3214 {
+  padding: 1vmin;
+  font-size: 5vmin;
+  font-family: DigitextItalic;
+}
+.jss3215 {
+  flex: 1 1;
+  padding: 1vmin;
+  font-size: 2.3vmin;
+}
+.jss3216 {
+  flex: 1 0 auto;
+  display: flex;
+  min-width: max(20vw,100px);
+  align-items: center;
+}
+.jss3217 {
+  overflow-y: scroll;
+}
+.jss3218 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.jss3219 {
+  flex: 1 1 auto;
+  min-width: max(300px,30vw);
+  align-self: center;
+}
+.jss3220 {
+  flex: 1 1 auto;
+  width: 100%;
+  text-align: center;
+}
+.jss3221 {
+  flex: 1 1 auto;
+  cursor: pointer;
+  margin: 1vmin;
+  max-height: 30vh;
+  object-fit: contain;
+  pointer-events: all;
+}
+.jss3221:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.jss3222 {
+  flex: 1 1 auto;
+  width: 90%;
+  height: 5vh;
+  margin: 1vmin;
+  max-height: 30vh;
+  object-fit: contain;
+  pointer-events: all;
+}
+.jss3223 {
+  width: 100%;
+  cursor: pointer;
+  margin: 1vmin;
+  pointer-events: all;
+}
+@media (max-width:959.95px) {
+  .jss3223 {
+    height: 200px;
+  }
+}
+@media (min-width:960px) {
+  .jss3223 {
+    height: 315px;
+  }
+}
+.jss3224 {
+  width: 100%;
+  padding: 0.5vmin;
+  background: linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+      linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
+      linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+      linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+      linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+      linear-gradient(-90deg, #aaa 1px, transparent 1px),
+      linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+      linear-gradient(#aaa 1px, transparent 1px),
+      #f2f2f2;
+  background-size: 4px 4px,
+      4px 4px,
+      80px 80px,
+      80px 80px,
+      80px 80px,
+      80px 80px,
+      80px 80px,
+      80px 80px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="MuiAppBar">
+.MuiAppBar-root {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.MuiAppBar-positionFixed {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+}
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+.MuiAppBar-positionAbsolute {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+.MuiAppBar-positionSticky {
+  top: 0;
+  left: auto;
+  right: 0;
+  position: sticky;
+}
+.MuiAppBar-positionStatic {
+  position: static;
+  transform: translateZ(0);
+}
+.MuiAppBar-positionRelative {
+  position: relative;
+}
+.MuiAppBar-colorDefault {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+}
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: #2196f3;
+}
+.MuiAppBar-colorSecondary {
+  color: #fff;
+  background-color: #f50057;
+}
+.MuiAppBar-colorInherit {
+  color: inherit;
+}
+.MuiAppBar-colorTransparent {
+  color: inherit;
+  background-color: transparent;
+}
+</style><style data-jss="" data-meta="MuiToolbar">
+.MuiToolbar-root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.MuiToolbar-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.MuiToolbar-regular {
+  min-height: 56px;
+}
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+.MuiToolbar-dense {
+  min-height: 48px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss121 {
+  flex-grow: 1;
+}
+.jss122 {
+  z-index: 1400 !important;
+}
+.jss124 {
+  flex-grow: 1;
+  font-family: DigitextItalic;
+}
+.jss125 {
+  height: 40px;
+}
+.jss126 {
+  clip-path: polygon(
+        0.5vmin 0.5vmin,                
+        1.5vmin 0%,                 
+        calc(100% - 1.5vmin) 0%,    
+        calc(100% - 0.5vmin) 0.5vmin,               
+        100% calc(100% - 0.5vmin),  
+        calc(100% - 0.5vmin) 100%, 
+        0.5vmin 100%,               
+        0 calc(100% - 0.5vmin)     
+      );
+  background: #eee;
+}
+.jss126 * {
+  text-decoration: none !important;
+}
+.jss126:nth-child(2) {
+  clip-path: polygon(
+          0vmin 0.5vmin,                
+        0.5vmin 0%,                 
+        calc(100% - 0.5vmin) 0%,    
+        calc(100% - 0vmin) 0.5vmin,               
+        calc(100% - 0.5vmin) calc(100% - 0.5vmin),  
+        calc(100% - 1.5vmin) 100%, 
+        1.5vmin 100%,               
+        0.5vmin calc(100% - 0.5vmin)      
+        );
+}
+.jss127 {
+  clip-path: polygon(
+        0vmin 0.5vmin,                
+      0.5vmin 0%,                 
+      calc(100% - 0.5vmin) 0%,    
+      calc(100% - 0vmin) 0.5vmin,               
+      calc(100% - 0.5vmin) calc(100% - 0.5vmin),  
+      calc(100% - 1.5vmin) 100%, 
+      1.5vmin 100%,               
+      0.5vmin calc(100% - 0.5vmin)      
+      );
+  background: #eee;
+}
+.jss127 * {
+  text-decoration: none !important;
+}
+</style><style data-jss="" data-meta="MuiAlert">
+.MuiAlert-root {
+  display: flex;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  border-radius: 4px;
+  letter-spacing: 0.01071em;
+  background-color: transparent;
+}
+.MuiAlert-standardSuccess {
+  color: rgb(30, 70, 32);
+  background-color: rgb(237, 247, 237);
+}
+.MuiAlert-standardSuccess .MuiAlert-icon {
+  color: #4caf50;
+}
+.MuiAlert-standardInfo {
+  color: rgb(13, 60, 97);
+  background-color: rgb(232, 244, 253);
+}
+.MuiAlert-standardInfo .MuiAlert-icon {
+  color: #2196f3;
+}
+.MuiAlert-standardWarning {
+  color: rgb(102, 60, 0);
+  background-color: rgb(255, 244, 229);
+}
+.MuiAlert-standardWarning .MuiAlert-icon {
+  color: #ff9800;
+}
+.MuiAlert-standardError {
+  color: rgb(97, 26, 21);
+  background-color: rgb(253, 236, 234);
+}
+.MuiAlert-standardError .MuiAlert-icon {
+  color: #f44336;
+}
+.MuiAlert-outlinedSuccess {
+  color: rgb(30, 70, 32);
+  border: 1px solid #4caf50;
+}
+.MuiAlert-outlinedSuccess .MuiAlert-icon {
+  color: #4caf50;
+}
+.MuiAlert-outlinedInfo {
+  color: rgb(13, 60, 97);
+  border: 1px solid #2196f3;
+}
+.MuiAlert-outlinedInfo .MuiAlert-icon {
+  color: #2196f3;
+}
+.MuiAlert-outlinedWarning {
+  color: rgb(102, 60, 0);
+  border: 1px solid #ff9800;
+}
+.MuiAlert-outlinedWarning .MuiAlert-icon {
+  color: #ff9800;
+}
+.MuiAlert-outlinedError {
+  color: rgb(97, 26, 21);
+  border: 1px solid #f44336;
+}
+.MuiAlert-outlinedError .MuiAlert-icon {
+  color: #f44336;
+}
+.MuiAlert-filledSuccess {
+  color: #fff;
+  font-weight: 500;
+  background-color: #4caf50;
+}
+.MuiAlert-filledInfo {
+  color: #fff;
+  font-weight: 500;
+  background-color: #2196f3;
+}
+.MuiAlert-filledWarning {
+  color: #fff;
+  font-weight: 500;
+  background-color: #ff9800;
+}
+.MuiAlert-filledError {
+  color: #fff;
+  font-weight: 500;
+  background-color: #f44336;
+}
+.MuiAlert-icon {
+  display: flex;
+  opacity: 0.9;
+  padding: 7px 0;
+  font-size: 22px;
+  margin-right: 12px;
+}
+.MuiAlert-message {
+  padding: 8px 0;
+}
+.MuiAlert-action {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: -8px;
+  padding-left: 16px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss2 {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss1 {
+  overflow: hidden;
+}
+</style><style data-jss="" data-meta="MuiCssBaseline">
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+</style><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline.bcb1cafa923482f4826e32741fe16a98.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/timeline.28ecda9667eeb8e1b18898b99fee6c31.js"></script><script id="adblock-detection" type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head><body style=""> <div id="root"><div class="jss1"><div class="jss2"><div class="MuiCollapse-container MuiCollapse-hidden" style="min-height: 0px;"><div class="MuiCollapse-wrapper"><div class="MuiCollapse-wrapperInner"><div class="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0" role="alert"><div class="MuiAlert-icon"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"></path></svg></div><div class="MuiAlert-message">Please support the Official Release of Digimon TCG. <br><a href="https://digimoncard.dev/privacy.html" target="_blank">Click here for our Privacy Policy</a>. DigimonCard.dev uses cookies, Google Analytics and Modern Browser storage to improve your experience.</div><div class="MuiAlert-action"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit" tabindex="0" type="button" aria-label="close"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></div></div><div class="MuiCollapse-container MuiCollapse-hidden" style="min-height: 0px;"><div class="MuiCollapse-wrapper"><div class="MuiCollapse-wrapperInner"><div class="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0" role="alert"><div class="MuiAlert-icon"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"></path></svg></div><div class="MuiAlert-message">Do not redistribute images from DigimonCard.dev. Do not link directly to the images from the site. You may use the images for your personal use and content. This ensures that DigimonCard.dev runs smoothly and visitors have up to date information.</div><div class="MuiAlert-action"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit" tabindex="0" type="button" aria-label="close"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></div></div><div class="MuiCollapse-container MuiCollapse-hidden" style="min-height: 0px;"><div class="MuiCollapse-wrapper"><div class="MuiCollapse-wrapperInner"><div class="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0" role="alert"><div class="MuiAlert-icon"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"></path></svg></div><div class="MuiAlert-message">Your deck information was corrupted. Click this button to clear your saved data on the server. <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary" tabindex="0" type="button"><span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></svg></span>Delete</span><span class="MuiTouchRipple-root"></span></button></div><div class="MuiAlert-action"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit" tabindex="0" type="button" aria-label="close"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></div></div></div><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"><div class="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"><button class="MuiButtonBase-root MuiIconButton-root jss123 MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><a style="line-height: 0;" href="/"><img class="jss125" src="/logo_sm.cdb735cd.png"></a><h6 class="MuiTypography-root jss124 MuiTypography-h6">Library</h6><a class="MuiButtonBase-root MuiButton-root MuiButton-text jss127" tabindex="0" role="button" aria-disabled="false" href="/decklist"><span class="MuiButton-label">Decks</span><span class="MuiTouchRipple-root"></span></a><a aria-current="page" class="MuiButtonBase-root MuiButton-root MuiButton-text jss126 active" tabindex="0" role="button" aria-disabled="false" href="/"><span class="MuiButton-label">Library</span><span class="MuiTouchRipple-root"></span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-text jss127" tabindex="0" aria-disabled="false" href="https://assets.orangeswim.dev/other/howtoplay.pdf" target="_blank" rel="noopener"><span class="MuiButton-label">How To Play</span><span class="MuiTouchRipple-root"></span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-text jss126" tabindex="0" role="button" aria-disabled="false" href="/deckbuilder"><span class="MuiButton-label">Deck Builder</span><span class="MuiTouchRipple-root"></span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-text jss127" tabindex="0" aria-disabled="false" href="https://twitter.com/orangeswimdev" target="_blank" rel="noopener"><span class="MuiButton-label">Twitter</span><span class="MuiTouchRipple-root"></span></a><a class="MuiButtonBase-root MuiButton-root MuiButton-text jss126" tabindex="0" role="button" aria-disabled="false" href="/signin"><span class="MuiButton-label">Yuune</span><span class="MuiTouchRipple-root"></span></a></div></header><div class="jss3211"><div class="jss3218"><div class="jss3215">Showing 48 card(s)s</div><div class="MuiToggleButtonGroup-root" role="group" aria-label="device"><button class="MuiButtonBase-root MuiToggleButton-root MuiToggleButtonGroup-grouped" tabindex="0" type="button" value="official" aria-pressed="false" aria-label="official"><span class="MuiToggleButton-label"><p class="MuiTypography-root MuiTypography-body1" title="Show Official English Cards">EN</p></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiToggleButton-root MuiToggleButtonGroup-grouped Mui-selected" tabindex="0" type="button" value="unofficial" aria-pressed="true" aria-label="unofficial"><span class="MuiToggleButton-label"><p class="MuiTypography-root MuiTypography-body1" title="Show Fan Translated Cards"><div class="MuiBox-root jss3267">PROXY</div></p></span><span class="MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiToggleButton-root MuiToggleButtonGroup-grouped" tabindex="0" type="button" value="merge" aria-pressed="false" aria-label="merge"><span class="MuiToggleButton-label"><p class="MuiTypography-root MuiTypography-body1" title="Show Merged Official and Fan Translated Cards">MERGE</p></span><span class="MuiTouchRipple-root"></span></button></div><div class="jss3216"><button class="MuiButtonBase-root MuiButton-root MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"></path></svg></span><span class="MuiTouchRipple-root"></span></button><span class="MuiSlider-root MuiSlider-colorPrimary"><span class="MuiSlider-rail"></span><span class="MuiSlider-track" style="left: 0%; width: 27.2727%;"></span><input type="hidden" value="20"><span class="MuiSlider-thumb MuiSlider-thumbColorPrimary" tabindex="0" role="slider" style="left: 27.2727%;" data-index="0" aria-labelledby="continuous-slider" aria-orientation="horizontal" aria-valuemax="60" aria-valuemin="5" aria-valuenow="20"></span></span><button class="MuiButtonBase-root MuiButton-root MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div><div class="MuiAutocomplete-root jss3219 MuiAutocomplete-hasClearIcon" role="combobox" aria-expanded="false"><div class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled" data-shrink="true" for="tags-filled" id="tags-filled-label">Search here or click the wrench for filters</label><div class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart MuiFilledInput-adornedStart MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"><div role="button" class="MuiChip-root MuiAutocomplete-tag MuiChip-outlined MuiChip-deletable" tabindex="-1" data-tag-index="0"><span class="MuiChip-label">"color":"blue"</span><svg class="MuiSvgIcon-root MuiChip-deleteIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><div role="button" class="MuiChip-root MuiAutocomplete-tag MuiChip-outlined MuiChip-deletable" tabindex="-1" data-tag-index="1"><span class="MuiChip-label">"color":"yellow"</span><svg class="MuiSvgIcon-root MuiChip-deleteIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><div role="button" class="MuiChip-root MuiAutocomplete-tag MuiChip-outlined MuiChip-deletable" tabindex="-1" data-tag-index="2"><span class="MuiChip-label">"color":"red"</span><svg class="MuiSvgIcon-root MuiChip-deleteIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><div role="button" class="MuiChip-root MuiAutocomplete-tag MuiChip-outlined MuiChip-deletable" tabindex="-1" data-tag-index="3"><span class="MuiChip-label">"color":"green"</span><svg class="MuiSvgIcon-root MuiChip-deleteIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><div role="button" class="MuiChip-root MuiAutocomplete-tag MuiChip-outlined MuiChip-deletable" tabindex="-1" data-tag-index="4"><span class="MuiChip-label">"color":"purple"</span><svg class="MuiSvgIcon-root MuiChip-deleteIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><div role="button" class="MuiChip-root MuiAutocomplete-tag MuiChip-outlined MuiChip-deletable" tabindex="-1" data-tag-index="5"><span class="MuiChip-label">"color":"black"</span><svg class="MuiSvgIcon-root MuiChip-deleteIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><div role="button" class="MuiChip-root MuiAutocomplete-tag MuiChip-outlined MuiChip-deletable" tabindex="-1" data-tag-index="6"><span class="MuiChip-label">"color":"white"</span><svg class="MuiSvgIcon-root MuiChip-deleteIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><div role="button" class="MuiChip-root MuiAutocomplete-tag MuiChip-outlined MuiChip-deletable" tabindex="-1" data-tag-index="7"><span class="MuiChip-label">"ctype":"digitama"</span><svg class="MuiSvgIcon-root MuiChip-deleteIcon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><input aria-invalid="false" autocomplete="off" id="tags-filled" placeholder="Try 'Agumon'" type="text" class="MuiInputBase-input MuiFilledInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd" aria-autocomplete="list" autocapitalize="none" spellcheck="false" value=""><div class="MuiAutocomplete-endAdornment"><button class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty" tabindex="-1" type="button" aria-label="Clear" title="Clear"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></div><div><button class="MuiButtonBase-root MuiButton-root MuiButton-text" tabindex="0" type="button"><span class="MuiButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div><div class="jss3217 jss3225"><div class="jss3212" id="scroller"><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3501">TANIMESO</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT1-001_en-US.jpg" class="jss3497 jss3500"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3503">Kazumasa Yasukuni</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT1-002.png.jpg" class="jss3497 jss3502"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3505">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT1-003.png.jpg" class="jss3497 jss3504"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3507">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT1-004.png.jpg" class="jss3497 jss3506"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3509">Qacoro</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT1-005_en-US.jpg" class="jss3497 jss3508"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3511">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT1-006_en-US.jpg" class="jss3497 jss3510"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3513">yuuki.</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT1-007_en-US.jpg" class="jss3497 jss3512"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3515">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT1-008.png.jpg" class="jss3497 jss3514"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3517">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT2-001_d766aeen-US.jpg" class="jss3497 jss3516"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3519">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT2-002_8e5e53en-US.jpg" class="jss3497 jss3518"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3521">Tonamikanji</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT2-003_2cf482en-US.jpg" class="jss3497 jss3520"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3523">Kenji Watanabe</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT2-004_6b4ab1en-US.jpg" class="jss3497 jss3522"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3525">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT2-005_753346en-US.jpg" class="jss3497 jss3524"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3527">koki</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT2-006_29d6efen-US.jpg" class="jss3497 jss3526"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3529">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT2-007_d6f6a3en-US.jpg" class="jss3497 jss3528"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3531">yuuki.</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT2-008_094789en-US.jpg" class="jss3497 jss3530"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3533">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT3-001_1a76b7en-US.jpg" class="jss3497 jss3532"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3535">Tonamikanji</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT3-002_86fcbeen-US.jpg" class="jss3497 jss3534"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3537">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT3-003_dc7d34en-US.jpg" class="jss3497 jss3536"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3539">Tonamikanji</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT3-004_3b620ben-US.jpg" class="jss3497 jss3538"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3541">Takase</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT3-005_438e58en-US.jpg" class="jss3497 jss3540"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3543">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT3-006_8d1277en-US.jpg" class="jss3497 jss3542"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3545">Takase</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT4-001_2aab58en-US.jpg" class="jss3497 jss3544"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3547">shosuke</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT4-002_d42939en-US.jpg" class="jss3497 jss3546"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3549">yuuki.</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT4-003_1bfe14en-US.jpg" class="jss3497 jss3548"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3551">yuuki.</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT4-004_ba845aen-US.jpg" class="jss3497 jss3550"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3553">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT4-005_83225een-US.jpg" class="jss3497 jss3552"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3555">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT4-006_a8fc8aen-US.jpg" class="jss3497 jss3554"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3557">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT5-002_bf042aen-US.jpg" class="jss3497 jss3556"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3559">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT5-002_9dd5eben-US.jpg" class="jss3497 jss3558"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3561">Ryodan</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT5-003_f1502aen-US.jpg" class="jss3497 jss3560"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3563">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT5-004_f05f1den-US.png" class="jss3497 jss3562"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3565">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT5-005_1db2c2en-US.jpg" class="jss3497 jss3564"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3567">yuuki.</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT5-006_3b0b67en-US.jpg" class="jss3497 jss3566"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3569">Kirita</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT6-001.png" class="jss3497 jss3568"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3571">Kyaromon</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT6-002.png" class="jss3497 jss3570"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3573">sasasi</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT6-003_b406c6en-US.jpg" class="jss3497 jss3572"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3575">Sanosuke Sakuma</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT6-004_5f6768en-US.jpg" class="jss3497 jss3574"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3577">Takase</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT6-005.png" class="jss3497 jss3576"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3579">banira</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/BT6-006.png" class="jss3497 jss3578"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3581"></div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/mons/ST1-01.jpg" class="jss3497 jss3580"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3583"></div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/mons/ST2-01.jpg" class="jss3497 jss3582"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3585">Nakano Haito</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/ST3-01_en-US.png.jpg" class="jss3497 jss3584"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3587">sasasi</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/ST4-01_50d8d9en-US.jpg" class="jss3497 jss3586"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3589">Nakano Haito</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/ST5-01_6b8363en-US.jpg" class="jss3497 jss3588"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3591">Tonamikanji</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/ST6-01_42587een-US.jpg" class="jss3497 jss3590"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3593">sasasi</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/ST7-01_48bc9aen-US.jpg" class="jss3497 jss3592"></div></div></div><div class="jss3213"><div class="jss3492"><div class="jss3499 jss3595">Tonamikanji</div><div class="jss3496"><img draggable="false" src="https://assets.cardlist.dev/images/communitycards/ST8-0101_2db72cen-US.jpg" class="jss3497 jss3594"></div></div></div></div></div></div></div></div> <script src="/src.58ee2603.js"></script><div role="presentation" class="MuiPopover-root" style="position: fixed; z-index: 5000; inset: 0px; pointer-events: none; visibility: hidden;" aria-hidden="true"><div tabindex="0" data-test="sentinelStart"></div><div class="MuiPaper-root MuiPopover-paper jss118 MuiPaper-elevation0 MuiPaper-rounded" style="opacity: 0; transform: scale(0.75, 0.5625); transition: opacity 357ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 238ms cubic-bezier(0.4, 0, 0.2, 1) 119ms; top: 108px; left: 1280px; transform-origin: 431px 327px 0px; visibility: hidden;" tabindex="-1"><div class="jss102 jss117" style="pointer-events: auto;"><div class="jss104"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="color: rgb(85, 85, 85);"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></svg></div><div class="jss103"><div><img draggable="false" src="https://assets.cardlist.dev/images/mons/ST1-01.jpg" class="jss105"></div><div class="jss107"><div class="jss106">Koromon</div><div class="jss108"><div class="jss110">Name</div><div class="jss111">Koromon</div></div><div class="jss108"><div class="jss110">Card Type</div><div class="jss111">Digitama</div></div><div class="jss108"><div class="jss110">Color</div><div class="jss111">Red</div></div><div class="jss108"><div class="jss110">Level</div><div class="jss111">2</div></div><div class="jss108"><div class="jss110">Type</div><div class="jss111">Lesser</div></div><div class="jss108"><div class="jss110">Stage Level</div><div class="jss111">In Training</div></div><div class="jss108"><div class="jss110">Rarity</div><div class="jss111">Uncommon</div></div><div class="jss113" title="Prices updated periodically from TCGPlayer.com (MarketPrice)."><div class="jss114">Prices updated periodically from TCGPlayer.com</div><div class="jss109"><div class="jss110">Price</div><div class="jss111">$</div></div></div><div class="jss108"><div class="jss110">Card Number</div><div class="jss111">ST1-01</div></div></div></div><div class="jss107"><div class="jss108"><div class="jss110">Inherited Effect</div><div class="jss112">[During your turn] If this Digimon has 4 or more Evolution Sources, it gets +1000 DP.<br></div></div></div></div></div><div tabindex="0" data-test="sentinelEnd"></div></div><div role="presentation" class="MuiPopover-root jss122" id="simple-menu" style="position: fixed; z-index: 1300; inset: 0px; visibility: hidden;"><div tabindex="0" data-test="sentinelStart"></div><div class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded" style="opacity: 0; transform: scale(0.75, 0.5625); visibility: hidden;" tabindex="-1"><ul class="MuiList-root MuiMenu-list MuiList-padding" role="menu" tabindex="-1"><li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="0" role="menuitem" aria-disabled="false">My Decks<span class="MuiTouchRipple-root"></span></li><li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false">Deck Builder<span class="MuiTouchRipple-root"></span></li><li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false">Credits<span class="MuiTouchRipple-root"></span></li><li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false">Logout<span class="MuiTouchRipple-root"></span></li><a href="https://digimoncard.dev/privacy.html" target="_blank"><li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false">Privacy Policy<span class="MuiTouchRipple-root"></span></li></a><li class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button" tabindex="-1" role="menuitem" aria-disabled="false">Close<span class="MuiTouchRipple-root"></span></li></ul></div><div tabindex="0" data-test="sentinelEnd"></div></div> 
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164497271-2"></script>
+<script>function a(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],a("js",new Date),a("config","UA-164497271-2");</script> <iframe scrolling="no" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.06c6ee58c3810956b7509218508c7b56.html?origin=https%3A%2F%2Fdigimoncard.dev" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
